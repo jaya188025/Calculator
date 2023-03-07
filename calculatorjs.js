@@ -1,17 +1,21 @@
-const jaya=document.querySelector('input')
+const output=document.querySelector('input')
 function ac()
 {
-    jaya.value=" ";
+    output.value=" ";
 }
 
 function result(num)
 {
-    jaya.value+=num;
+    output.value+=num;
 }
 function cal()
 { 
-    var output=eval(jaya.value);
-    jaya.value=output;
+    var final_output=eval(output.value);
+    output.value=final_output;
+}
+function del()
+{
+    output.value=output.value.slice(0,-1)
 }
 
 
